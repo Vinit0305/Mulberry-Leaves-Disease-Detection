@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Worm Rearing Guide</title>
+    <style>
+      /* Basic styles */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      main {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      h1, h2, h3 {
+        margin: 0;
+        padding: 1rem;
+      }
+      p, li {
+        margin: 0;
+        padding: 1rem;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      
+      /* Responsive styles */
+      @media only screen and (max-width: 600px) {
+        h1 {
+          font-size: 2rem;
+        }
+        h2 {
+          font-size: 1.5rem;
+        }
+        h3 {
+          font-size: 1.2rem;
+        }
+        p, li {
+          font-size: 1rem;
+        }
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      th, td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: left;
+      }
+
+      .lag {
+        display: inline-block;
+        padding: 12px 24px;
+        border-radius: 6px;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #7ce90f;
+        font-size: 15px;
+        color: black;
+        transition: background-color 0.3s ease;
+        margin-right: 10px;
+      }
+
+      th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <a href="{{url_for('week1')}}" class="lag">English</a>
+    </div>
+    <main>
+      <h1>Worm Rearing Guide</h1>
+      <img src="{{url_for('static',filename='images/image1.jpeg')}}" alt="Worm Image">
+      <h2>Phase 1</h2>
+      <p>Young worms should be fed young tender leaves; 2nd and 3rd leaves come from the tips of shoots. These are cut into small pieces and fed to the worms at least twice a day, in the morning and afternoon, for 4 days. After 4 days, the worms go into sleep.</p>
+      <h2>Molting</h2>
+      <p>Molting is when the worms shed their skin as they enter the next instar. Molting takes 18-24 hours (1 day), and during this period, the worms should not be fed.</p>
+      <p>Apart from counting the days, the rearer should be able to identify when the worms enter and exit the molt.</p>
+      <h3>Signs of Molting:</h3>
+      <ul>
+        <li>Swollen heads</li>
+        <li>Heads held high</li>
+        <li>Worms remain still</li>
+      </ul>
+      <p>During molting, the bedding should be kept dry and open.</p>
+      <img src="{{url_for('static',filename='images/image2.jpeg')}}" alt="Bed Image">
+      <h3>Signs of Coming Out of Molt:</h3>
+      <ul>
+        <li>Worms are active and move around</li>
+        <li>The mouthpart is enlarged</li>
+        <li>The body is elongated with loose skin</li>
+        <li>Shedded skins are easily visible on the bedding</li>
+      </ul>
+      <p>After the worms emerge from the molt, spread them evenly on the bedding to increase dryness and to accommodate their growing body size.</p>
+      <p>Once all the worms are out of the molt, feed them.</p>
+      <h3>Leaf Requirement to Rear One Case of Silkworms:</h3>
+      <table>
+        <tr>
+          <th>Phase</th>
+          <th></th>
+          <th>Age/Days</th>
+          <th>Leaf Weight</th>
+          <th>Daily Leaf Weight</th>
+          <th>Daily Leaf/Shoot Notes</th>
+        </tr>
+        <tr>
+          <td>1st</td>
+          <td>1</td>
+          <td>1st</td>
+          <td>150 g</td>
+          <td>-</td>
+          <td>Harvest 2nd and 3rd tender leaves</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>2</td>
+          <td>2nd</td>
+          <td>200 g</td>
+          <td>-</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>3</td>
+          <td>3rd</td>
+          <td>200 g</td>
+          <td>-</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>4</td>
+          <td>4th</td>
+          <td>150 g</td>
+          <td>-</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>5</td>
+          <td>5th</td>
+          <td>Warm sleep</td>
+          <td>-</td>
+          <td></td>
+        </tr>
+      </table>
+      <h3>Silkworm Rearing Density</h3>
+      <table>
+        <tr>
+          <th>Phase</th>
+          <th>Initial Period</th>
+          <th>Middle Period</th>
+          <th>Later Period</th>
+          <th>Growth</th>
+        </tr>
+        <tr>
+          <td>1st</td>
+          <td>0.3m²</td>
+          <td>0.4m²</td>
+          <td>0.6m²</td>
+          <td>1.0m²</td>
+        </tr>
+      </table>
+    </main>
+  </body>
+</html>

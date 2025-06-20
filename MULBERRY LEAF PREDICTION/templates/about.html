@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mulberry Leaves Disease Detection Project</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		
+html, body {
+  height: 100%;
+}
+body {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+/* Main heading */
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color:rgb(56, 231, 123);
+}
+
+/* Subheading */
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: rgb(2, 68, 92);
+}
+
+/* Description */
+p {
+  font-size: 1.2rem;
+  text-align: justify;
+  max-width: 80%;
+  margin-left: 10%;
+  margin-bottom: 2rem;
+}
+
+/* Team members */
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-member {
+  width: 250px;
+  margin: 1rem;
+}
+
+.team-member img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.team-member h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.team-member p {
+  font-size: 1.1rem;
+  text-align: center;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.member {
+  width: 200px;
+  margin: 20px;
+  text-align: center;
+}
+
+.member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.member h3 {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+.member p {
+  margin-top: 5px;
+  font-style: italic;
+  font-size: 15px;
+  color: #080505;
+}
+
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Welcome to Mulberry Leaves Disease Detection</h1>
+	</header>
+	
+	<main>
+		<section>
+			<h2>About Us</h2>
+			<p> We are a team of four passionate individuals dedicated to improving mulberry leaf health through innovative disease detection solutions. Our goal is to support farmers, researchers, and enthusiasts interested in sericulture by providing them with reliable resources and practical knowledge to identify, manage, and prevent diseases affecting mulberry leaves. By empowering others with these tools, we aim to promote healthier silkworm cultivation and contribute to a more sustainable sericulture industry.
+      </p></p>
+		</section>
+		
+		<section>
+			<h2>Our Project</h2>
+			<p> Our project is focused on providing valuable information about mulberry leaf disease detection. By leveraging advanced techniques, we aim to help farmers and sericulture practitioners identify and manage diseases that affect mulberry leaves, which are crucial for healthy silkworm rearing. By sharing accurate insights and practical solutions, we strive to enhance disease management practices and contribute to a more sustainable and productive sericulture industry for future generations.
+      </p></p>
+		</section>
+		
+		<section>
+			<h2>Meet Our Team</h2>
+			<div class="team-members">
+                <div class="member">
+                  <img src="{{url_for('static',filename='images/saurabh.jpg')}}" alt="Member 1">
+                  <h3>Saurabh</h3>
+              
+                </div>
+                <div class="member">
+                  <img src="{{url_for('static',filename='images/vinit.jpg')}}" alt="Member 2">
+                  <h3>Vinit</h3>
+                  
+                </div>
+                <div class="member">
+                    <img src="{{url_for('static',filename='images/khushi.jpg')}}" alt="Member 3">
+                    <h3>Khushi </h3>
+                   
+                  </div>
+                  <div class="member">
+                    <img src="{{url_for('static',filename='images/shardul.jpg')}}" alt="Member 4">
+                    <h3>Shardul</h3>
+                    
+                  </div>
+             
+              </div>
+              
+		</section>
+
+    <section>
+			<h2>UNDER THE GUIDANCE</h2>
+			<div class="team-members">
+                <div class="member">
+                  <img src="{{url_for('static',filename='images/Kajal.jpg')}}" alt="Member 1">
+                  <h3>Miss.Kajal Vatekar</h3>
+                  <p>Internal Guide</p>
+              
+                </div>
+                <div class="member">
+                  <img src="{{url_for('static',filename='images/rm.jpg')}}" alt="Member 2">
+                  <h3>Miss. Poonam Railkar</h3>
+                  <p>External Guide </p>
+
+                  
+                </div>
+               
+                  
+             
+              </div>
+              
+		</section>
+	</main>
+	
+</body>
+</html>

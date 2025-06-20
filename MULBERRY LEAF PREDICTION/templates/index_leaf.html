@@ -1,0 +1,248 @@
+<html>
+<head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+/* Styles for large screens */
+@media (min-width: 1024px) {
+    /* Add your styles here */
+    body {
+        background-size: cover;
+    }
+    .bd {
+        margin-left: 0;
+    }
+    .fd {
+        margin-left: 0;
+        margin-top: 0;
+    }
+}
+
+/* Styles for medium screens */
+@media (max-width: 1023px) {
+    /* Add your styles here */
+    .as {
+        text-align-last: left;
+    }
+    .details h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Styles for small screens */
+@media (max-width: 767px) {
+    /* Add your styles here */
+    form {
+        margin-left: 10%;
+        width: 80%;
+    }
+    .details h2 {
+        font-size: 1.5rem;
+    }
+    input[type="submit"] {
+        margin-top: 100px;
+    }
+}
+
+
+* {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+
+
+        }
+.as{
+    text-align- last: center;
+}
+     
+
+        form {
+            margin-left: -20%;
+            display: flex;
+            height: 85vh;
+            justify-content: center;
+            align-items: center;
+            margin-top: -150px;
+            margin-bottom: 0%;
+            width: 60%;
+            text-align: center;
+			margin-left:300px;
+            
+        }
+
+
+        .details h2 {
+            
+            position: relative;
+            top: 100px;
+            margin: auto;
+            color: rgb(18, 231, 231);
+            font-size: 3rem;
+        }
+
+        label:hover {
+            transform: scale(1.03);
+        }
+
+        .details h2 {
+            /* margin-bottom: 300px; */
+            position: relative;
+            top: 100px;
+            margin: auto;
+            color: rgb(18, 231, 231);
+            font-size: 3rem;
+
+        }
+
+      
+
+
+        .details h1 {
+            color: rgb(11, 1, 1);
+            padding: 20px;
+            border-radius: 15px;
+            background-color: rgb(8, 8, 8);
+        }
+
+
+        .upload {
+
+            font-size: 20px;
+            background-color: rgb(255, 252, 252);
+            border-radius: 20px;
+            outline: none;
+            width: 500px;
+            color: rgb(0, 0, 0);
+            border: 3px solid rgb(45, 47, 49);
+
+
+
+        }
+
+        ::-webkit-file-upload-button {
+            color: rgb(255, 252, 252);
+            padding: 20px;
+            border: 2px solid rgb(201, 6, 6);
+            background-color: rgb(201, 6, 6);
+            border-radius: 15px;
+
+        }
+
+        ::-webkit-file-upload-button:hover {
+            border-radius: 20px;
+            border: 2px solid rgb(177, 174, 174);
+
+
+        }
+
+
+
+        input[type="submit"] {
+            
+            position: absolute;
+            margin-top: 200px;
+            padding: 15px 35px;
+            background-color: rgb(31, 185, 190);
+            border-radius: 15px;
+            color: black;
+            font-size: 1.5rem;
+            border: 4px solid rgb(31, 185, 190);
+        }
+
+        
+            body{
+                background-image: url('{{url_for('static',filename='images/Background.jpg')}}');
+                background-repeat: no-repeat;
+                background-size: auto;
+            }
+
+            #ch0{
+                display: none;
+                }
+            #ch1{
+                display: none;
+                }
+
+                ul {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        ul li {
+ list-style: none;
+ height: 30px;
+            text-align: left;
+            font-size: large;
+        }
+        .bd{
+            margin-left: -45%;
+        }
+        .fd{
+        margin-left: 40%;
+        margin-top: -28%;
+        }
+        
+</style>
+
+</head>
+<body>
+    <div class="head">
+	  <h1 style="text-align:center;font-size:4rem;">MULBERRY LEAVES DISEASE DETECTION</h1>
+    </div>
+      
+            
+<div class="bd">
+     
+            <form action="/predict2" method="post" enctype="multipart/form-data" onsubmit="showloading()">
+
+                <input type="file" name="image" class="upload">
+				<br>
+				<br>
+                <input type="submit" value="Predict">
+
+            </form>
+</div>
+
+
+<div class="fd" >
+{% if user_image %}
+<img src="{{ user_image }}" width="250px" >
+{% endif %}
+<h1  style="color: rgb(245, 124, 4);">predicted disease:{{pred_output}}</h1><br>
+<h2 style="color: rgb(12, 7, 1); ">control measures:</h2>
+<ul>
+    {% for item in c_m %}
+        <li style="display: list-item;">{{ item }}</li>
+    {% endfor %}
+</ul>
+</div>
+<!--
+ <div id="ch0" style="align-items: center; position: relative;">
+    <li>het1</li>
+    <li>jdbsd</li>
+</div>
+
+<div id="ch1">
+    <li>het2</li>
+    <li>jdbsd</li>
+</div> 
+-->
+
+
+
+</body>
+<!--
+<script>
+    var greeting = "{{ pred_output }}";
+    console.log(greeting);
+if(greeting==0){
+    document.getElementById("ch0").style.display="block"
+}
+else if (greeting==1) {
+    document.getElementById("ch1").style.display="block"
+} 
+
+</script>
+-->
+</html>

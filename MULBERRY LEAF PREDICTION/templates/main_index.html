@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Smt.Kashibai Navle College of Engineering, Pune</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			background-image: url('slider1.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		h1 {
+			font-size: 48px;
+			font-weight: bold;
+			color: rgb(9, 9, 9);
+			text-shadow: 2px 2px black;
+			animation: pulse 2s infinite;
+		}
+		.button {
+            gap: 20px;
+			display: inline-block;
+			padding: 16px 32px;
+			color: white;
+			font-size: 24px;
+			font-weight: bold;
+			background-image: linear-gradient(to right, #ff5f6d, #ffc371);
+			border-radius: 50px;
+			box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+			cursor: pointer;
+			
+		}
+		@keyframes pulse {
+			0% {
+				transform: scale(1);
+			}
+			50% {
+				transform: scale(1.1);
+			}
+			100% {
+				transform: scale(1);
+			}
+		}
+        #background-slider {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+.button a{
+	text-decoration: none;
+}
+.background-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+#main{
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.background-image.active {
+	opacity: 1;
+}
+	</style>
+</head>
+<body>
+	<div id="main">
+	<div class="container">
+		<h1>Smt. Kashibai Navle College of Engineering, Pune</h1>
+        
+		<div>
+			<!--<button class="button"><a href="{{url_for('home')}}">HOME</a></button>-->
+            <button class="button"><a href="{{url_for('about')}}">ABOUT US</a></button>
+            <button class="button"><a href="{{url_for('login')}}">LOGIN</a></button>
+            <button class="button"><a href="{{url_for('register')}}">REGISTER</a></button>
+			<button class="button"><a style="width: 10px;" href="{{url_for('static',filename='vedio/Demo.mp4')}}">DEMO</a></button>
+		</div>
+	</div>
+	</div>
+    
+	<script>
+	const images = [
+	'{{url_for('static',filename='images/govt19.jpg')}}',
+	'{{url_for('static',filename='images/govt20.jpg')}}',
+	'{{url_for('static',filename='images/govt21.jpg')}}',
+	'{{url_for('static',filename='images/govt22.jpg')}}'
+  ];
+  let index = 0;
+  const select = document.querySelector('#main');
+  select.style.backgroundImage =  `url(${images[index]})`;
+  setInterval(() => {
+	select.style.backgroundImage = `url(${images[index]})`;
+	index++;
+	if (index >= images.length) {
+	  index = 0;
+	}
+  }, 3000);
+</script>
+</body>
+</html>

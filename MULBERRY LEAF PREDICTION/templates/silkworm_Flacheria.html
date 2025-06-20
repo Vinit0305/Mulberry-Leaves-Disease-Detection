@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dieses-Flacheria</title>
+	<style>
+		/* Style for the header */
+    body {
+	background-image: url("back.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+		header {
+			background: linear-gradient(to right, #00a862, #00755e);
+
+
+
+			color: white;
+			padding: 20px;
+			text-align: center;
+			font-size: 36px;
+		}
+
+		/* Style for the company name */
+		.company-name {
+			font-weight: bold;
+		}
+
+
+    
+		/* Style for the content in the columns */
+    .parent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       margin-top: 30px;
+      }
+      .child {
+        width: 50%;
+        text-align: center;
+      }
+     .child h2{
+      font-size: 30px;
+      color: blue;
+     }
+
+    .container-body {
+			display: flex;
+			flex-wrap: wrap;
+			box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+			color: #090101;
+			padding: 20px;
+		}
+		.column1 {
+			flex: 30%;
+			padding: 10px;
+			box-sizing: border-box;
+      
+		}
+    .column1 ol{
+      font-size: 20px;
+    }
+		/* Style for the content in the columns */
+	img{
+    border-radius: 20px;
+  }
+		@media screen and (max-width: 600px) {
+			.column1 {
+				flex: 100%;
+			}
+		}
+    .lag{
+      display: inline-block;
+        padding: 12px 24px;
+        border-radius: 6px;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        background: linear-gradient(to bottom, #FFCC00 0%, #FFCC00 50%, #A50B10 50%, #A50B10 100%);
+        font-size: 15px;
+        color: black;
+        transition: background-color 0.3s ease;
+        margin-right: 10px;
+    }
+    .btn {
+        margin-top: 30px;
+        display: inline-block;
+        padding: 22px 44px;
+        border-radius: 6px;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        background: linear-gradient(to right, #9CECFB, #65C7F7, #0052D4);
+        color: black;
+        transition: background-color 0.3s ease;
+        margin-right: 10px;
+      }
+      .btn:last-of-type {
+        margin-right: 0;
+      }
+      .btn:hover {
+        background: linear-gradient(to bottom right, #87CEFA, #00BFFF);
+      }
+      .btn-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 800px;
+      }
+      @media screen and (max-width: 480px) {
+        .btn {
+          display: block;
+          width: 100%;
+          margin: 0 0 10px 0;
+        }
+        .btn:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+      footer {
+  margin-top: 20px;
+  background-color: #0f0f0f;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+}
+
+footer p {
+  margin: 0;
+}
+
+	</style>
+</head>
+<body>
+	<header>
+		<div class="company-name">RESHME SIRI</div>
+	</header>
+  <div >
+    <a href="{{url_for('fla_k')}}" class="lag">ಕನ್ನಡ</a>
+   
+   <button><audio src="{{url_for('static',filename='vedio/ch.mp3')}}" controls autoplay></audio>AUDIO</button>
+  </div>
+
+  <div class="parent">
+    <div class="child">
+     
+		
+      
+      <img src="{{ user_image }}" width="250px" >
+      
+			<h2>Predicted Disease :-  <span>Flacheria</span></h2>
+    </div>
+  </div>
+  <div class="container-body">
+		<div class="column1">
+			<h2>Causes:</h2>
+			<ol>
+        <li>High temperature & RH</li>
+        <li>Poor ventilation</li>
+        <li>Poor sanitation</li>
+        <li>Improper bed cleaning</li>
+        <li>Feeding of wet leaves</li>
+        <li>Accumulation of faeces</li>
+        <li>Feeding of contaminated leaves</li>
+        <li>Overcrowding of worms</li>
+      </ol>
+		</div>
+		<div class="column1">
+			<h2>Symptoms:</h2>
+		<ol>
+      <li>Sluggish movement</li>
+      <li>Loss of appetite</li>
+      <li>Shrinkage of abdominal segment</li>
+      <li>Swollen thorax</li>
+      <li>Vomiting of fluid</li>
+      <li>Loss of clasping power</li>
+      <li>Body softened & rupture</li>
+      <li>Blackening of Thorax</li>
+
+    </ol>
+		</div>
+    <div class="column1">
+			<h2>Control measures:</h2>
+			<ol>
+        <li>Effective disinfection of rearing house/ appliances</li>
+        <li>Avoid overcrowding</li>
+        <li>Maintain optimum temperature & Relative humidity</li>
+        <li>Avoid feeding diseased & contaminated leaf</li>
+        <li>Collect diseased worms & destroy</li>
+        <li>Apply Bleaching powder+lime at 1:9 ratio</li>
+        <li>Proper bed cleaning</li>
+        <li>Proper sanitation & Hygiene</li>
+      </ol>
+		</div>
+	</div>
+  <div class="btn-group">
+   
+    <a href="{{url_for('team1')}}" class="btn">EXIT</a>
+  </div>
+  <footer>
+    <p>&copy; 2023 My Website</p>
+  </footer>
+
+  
+  
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        /* Style the navigation bar */
+        .navbar {
+            overflow: hidden;
+            width: 90%;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Style the links inside the navigation bar */
+        .navbar a {
+            float: left;
+            display: block;
+            color: rgb(11, 11, 11);
+            text-align: center;
+            padding: 24px 48px;
+            text-decoration: none;
+            transition: border-color 0.5s ease;
+            font-weight: bold;
+           
+  
+        }
+
+        /* Add a hover effect for the links */
+        .navbar a:hover {
+            border-bottom: 2px solid #7d060646;
+            color:black;
+            
+        }
+
+        /* Add a "active" class to the current link */
+        
+
+        /* Add a background video */
+        #background-video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+        }
+
+        /* Style the content */
+        .content {
+            margin-top: 10%;
+            text-align: center;
+            color:transparent;
+            font-family: Arial, sans-serif;
+            font-size: 60px;
+            -webkit-text-stroke: 1px #fff;
+            background-image: linear-gradient(#fff,#fff);
+            background-repeat: no-repeat;
+            -webkit-background-clip: text;
+            background-position: -750px 0;
+            animation: backcolor 5s linear infinite;
+
+
+        }
+        @keyframes backcolor{
+            100%{
+                background-position: 0;
+            }
+        }
+        .pa{
+            margin-top:-80px ;
+            text-align: center;
+            color:rgb(235, 228, 228);
+            font-family: Arial, sans-serif;
+            font-size: 25px;
+            font-weight: bold;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a class="active" href="#">Home</a>
+        <a href="{{url_for('team1')}}">Silkworm Disease Prediction</a>
+        <a href="{{url_for('team2')}}">Leaf Disease Prediction</a>
+        <a href="{{url_for('stage')}}">Stages Information</a>
+        <a href="{{url_for('price')}}">Current Market Price</a>
+        <a href="{{url_for('logout')}}">Logout</a>
+    </div>
+
+    <!-- Background Video -->
+    <video autoplay loop muted id="background-video">
+        <source src="{{url_for('static',filename='vedio/ras.mp4')}}" type="video/mp4">
+    </video>
+
+    <!-- Content -->
+    <div class="content">
+        <h1>MULBERRY LEAVES DISEASE DETECTION</h1>
+        </div>
+        <p class="pa">Healthy Mulberry Leaves, Better Silk — Smart Disease Detection for Farmers</p>
+        
+    </div>
+</body>
+</html>

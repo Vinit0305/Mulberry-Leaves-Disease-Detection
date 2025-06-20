@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Worm Rearing Guide</title>
+    <style>
+      /* Basic styles */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      main{
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      h1, h2, h3 {
+        margin: 0;
+        padding: 1rem;
+      }
+      p, li {
+        margin: 0;
+        padding: 1rem;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      
+      /* Responsive styles */
+      @media only screen and (max-width: 600px) {
+        h1 {
+          font-size: 2rem;
+        }
+        h2 {
+          font-size: 1.5rem;
+        }
+        h3 {
+          font-size: 1.2rem;
+        }
+        p, li {
+          font-size: 1rem;
+        }
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.lag{
+      display: inline-block;
+        padding: 12px 24px;
+        border-radius: 6px;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #7ce90f;
+        font-size: 15px;
+        color: black;
+        transition: background-color 0.3s ease;
+        margin-right: 10px;
+    }
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+    </style>
+  </head>
+  <body>
+    <div >
+      <a href="{{url_for('week4')}}" class="lag">English</a>
+    </div>
+    <main>
+    <h1>Worm Rearing Guide</h1>
+    <img src="{{url_for('static',filename='images/4a.jpg')}}" alt="Worm Image">
+    <h2>4th Stage</h2>
+    <p>Feed the worms on the entire shoots for 6 days.</p>
+    <h2>Molting</h2>
+    <p>As the worms enter the next instar, their skin will shed, which is known as molting. Molting takes 18-24 hours (1 day), and during this period, the worms should not be fed.</p>
+    <p>Besides counting the days, the rearer should be able to identify when the worms are going in and out of molting.</p>
+    <h3>Signs of Molting:</h3>
+    <ul>
+      <li>Swollen heads</li>
+      <li>Heads raised</li>
+      <li>Worms remain still</li>
+    </ul>
+    <p>During molting, keep the bedding dry and open.</p>
+    <img src="{{url_for('static',filename='images/4b.jpg')}}" alt="Bed Image">
+    <h3>Signs of Coming Out of Molting:</h3>
+    <ul>
+      <li>Worms are active and move around</li>
+      <li>Mouthparts are wide</li>
+      <li>Body is soft with loose skin</li>
+      <li>Shed skins are easily visible on the bed</li>
+    </ul>
+    <p>After the worms have come out of molting, spread them evenly to increase the dry matter in the bed and adjust the space according to their growing body size.</p>
+    <p>Feed the worms after they all have come out of molting.</p>
+    <h3>Leaf Requirement for Rearing One Case of Silk Worms:</h3>
+    <table>
+           <tr>
+            <th>Stage</th>
+            <th></th>
+            <th>Age/Day</th>
+            <th>Leaf Weight</th>
+            <th>Daily Leaf Weight</th>
+            <th>Daily Leaf/Shoot Tips</th>
+           </tr>
+           <tr>
+            <td>4th</td>
+            <td>15</td>
+            <td>1st</td>
+            <td>-</td>
+            <td>12 kg</td>
+            <td>Harvest good shoots (1-1.5 meters long)</td>
+           </tr>
+           <tr>
+            <td></td>
+            <td>16</td>
+            <td>2nd</td>
+            <td>-</td>
+            <td>18 kg</td>
+            <td></td>
+           </tr>
+           <tr>
+            <td></td>
+            <td>17</td>
+            <td>3rd</td>
+            <td>-</td>
+            <td>24 kg</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>18</td>
+            <td>4th</td>
+            <td>-</td>
+            <td>30 kg</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>19</td>
+            <td>5th</td>
+            <td>-</td>
+            <td>40 kg</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>20</td>
+            <td>6th</td>
+            <td>-</td>
+            <td>Worms are sleeping</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>21</td>
+            <td>7th</td>
+            <td>-</td>
+            <td></td>
+            <td></td>
+        </tr>
+       
+       
+       
+
+    </table>
+    <h3>Silk Worm Rearing Density</h3>
+    <table>
+        <tr>
+            <th>Stage</th>
+            <th>Initial Period</th>
+            <th>Middle Period</th>
+            <th>Final Period</th>
+            <th>Growth</th>
+        </tr>
+        <tr>
+            <td>4th</td>
+            <td>4.0m²</td>
+            <td>5.0m²</td>
+            <td>7.0m²</td>
+            <td>8.0m²</td>
+        </tr>
+    </table>
+    </main>
+  </body>
+</html>

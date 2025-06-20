@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Worm Rearing Guide</title>
+    <style>
+      /* Basic styles */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      main {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      h1, h2, h3 {
+        margin: 0;
+        padding: 1rem;
+      }
+      p, li {
+        margin: 0;
+        padding: 1rem;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      
+      /* Responsive styles */
+      @media only screen and (max-width: 600px) {
+        h1 {
+          font-size: 2rem;
+        }
+        h2 {
+          font-size: 1.5rem;
+        }
+        h3 {
+          font-size: 1.2rem;
+        }
+        p, li {
+          font-size: 1rem;
+        }
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .lag {
+        display: inline-block;
+        padding: 12px 24px;
+        border-radius: 6px;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #7ce90f;
+        font-size: 15px;
+        color: black;
+        transition: background-color 0.3s ease;
+        margin-right: 10px;
+      }
+
+      th, td {
+        border: 1px solid #ccc;
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <a href="{{url_for('week5')}}" class="lag">English</a>
+    </div>
+    <main>
+      <h1>Worm Rearing Guide</h1>
+      
+      <h2>Stage 5</h2>
+      <p>Feed the entire batch for 7/8 days. Always keep a single layer of worms during feeding. Avoid overripe, yellow, and diseased leaves.</p>
+      
+      <h2>Bed Cleaning</h2>
+      <p>Bed cleaning is done to remove dung, dead worms, and leaf residues that encourage worm growth. This is done daily for young silkworms and mature worms. It is best to clean the bed before feeding the worms.</p>
+      
+      <p>To clean the bed, spread the leaves on the worms and then spread fresh leaves on top of the bed. The worms will feed on the fresh leaves in the bed. Transfer the worms to another clean bed/tray using the leaves. Remove any remaining worms and then dispose of the waste in a compost heap. Spread the worms evenly and then feed them.</p>
+      
+      <h3>Leaf Requirements for Rearing Silkworms:</h3>
+      <table>
+        <tr>
+          <th>Stage</th>
+          <th></th>
+          <th>Age/Day</th>
+          <th>Leaf Weight</th>
+          <th>Leaf Weight per Day</th>
+          <th>Leaf/Shoot Notes per Day</th>
+        </tr>
+        <tr>
+          <td>5th</td>
+          <td>22</td>
+          <td>1st</td>
+          <td>-</td>
+          <td>20 kg</td>
+          <td>Feed with whole leaves.</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>23</td>
+          <td>2nd</td>
+          <td>-</td>
+          <td>30 kg</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>24</td>
+          <td>3rd</td>
+          <td>-</td>
+          <td>40 kg</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>25</td>
+          <td>4th</td>
+          <td>-</td>
+          <td>50 kg</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>26</td>
+          <td>5th</td>
+          <td>-</td>
+          <td>60 kg</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>27</td>
+          <td>6th</td>
+          <td>-</td>
+          <td>90 kg</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>28</td>
+          <td>7th</td>
+          <td>-</td>
+          <td>100 kg</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>29</td>
+          <td>8th</td>
+          <td>-</td>
+          <td>50 kg</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>30</td>
+          <td>9th</td>
+          <td>-</td>
+          <td></td>
+          <td>Worms start spinning cocoons</td>
+        </tr>
+      </table>
+      
+      <h3>Silkworm Rearing Density</h3>
+      <table>
+        <tr>
+          <th>Stage</th>
+          <th>Initial Period</th>
+          <th>Middle Period</th>
+          <th>Later Period</th>
+          <th>Growth</th>
+        </tr>
+        <tr>
+          <td>5th</td>
+          <td>8.0m²</td>
+          <td>12.0m²</td>
+          <td>16.0m²</td>
+          <td>17.0m²</td>
+        </tr>
+      </table>
+
+      <h3>Mounting:</h3>
+      <p>Mounting refers to the process where mature silkworms are transferred from rearing beds to mounting trays to start spinning. The transition begins 8 days after the worms enter the 5th stage.</p>
+      
+      <h3>Signs of Maturity:</h3>
+      <ul>
+        <li>Larvae stop feeding and continuously crawl around looking for a place to mount.</li>
+        <li>They move to the corners of the rearing beds, which are ready for mounting.</li>
+        <li>If mounting is delayed, worms may spin around on the bed, and silk threads become visible on the bed.</li>
+        <li>The cocoon appears white because it is full of silk.</li>
+        <li>The worms appear elongated and shriveled.</li>
+      </ul>
+      
+      <h3>Mounting Process</h3>
+      <p>Mature worms are picked up from rearing beds and transferred to mounting trays. Care should be taken to place the correct number of worms on the trays to avoid overcrowding and double cocoons.</p>
+      <img src="{{url_for('static',filename='images/image8.jpeg')}}" alt="">
+      <strong>Note: Diseased worms should be removed separately and disposed of by burning or burying.</strong>
+      
+      <h3>Increasing Density</h3>
+      <p>90 - 100 larvae should be accommodated per square meter (1 square foot).</p>
+      <img src="{{url_for('static',filename='images/image9.jpeg')}}" alt="">
+      <p>Paper should be spread under the mounting trays to absorb worm excreta, and it should be replaced when soiled.</p>
+      <img src="{{url_for('static',filename='images/image10.jpeg')}}" alt="">
+      
+      <h3>Environmental Conditions for Mounting</h3>
+      <p>The temperature should not exceed 26°C. Humidity should be between 60-70%. These two factors significantly affect the quality of the silk cocoons (reliability). The mounting process should cause minimal disturbance to the silk worms.</p>
+      <img src="{{url_for('static',filename='images/image11.jpeg')}}" alt="">
+      
+      <h3>Silk Cocoon Harvesting</h3>
+      <p>Cocooning occurs between the 7th and 8th day after starting mounting. By this time, the worms have completed spinning and have transformed into pupae. To confirm, cut open 2 or 3 cocoons to check if the pupae are fully developed. The appropriate time for harvesting is when the pupae turn brown and become firm.</p>
+      <img src="{{url_for('static',filename='images/image12.jpeg')}}" alt="">
+      <p>De-flossing - After harvesting, all loose fibers on the surface of the cocoon are removed to give a clean appearance, making it ready for the market. Failure to de-floss properly reduces the market value of the silk cocoon.</p>
+      <img src="{{url_for('static',filename='images/image13.jpeg')}}" alt="">
+    </main>
+  </body>
+</html>

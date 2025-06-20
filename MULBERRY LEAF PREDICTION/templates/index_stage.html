@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MULBERRY LEAVES DISEASE DETECTION</title>
+    <style>
+      /* Center the form */
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+      }
+      
+      /* Style the input field */
+      select {
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        border-radius: 10px solid rgb(102, 3, 3);
+        display: block;
+        width: 80%;
+        max-width: 500px;
+        height: 60px;
+        padding: 10px;
+        font-size: 24px;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        text-align-last: center;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: #fff;
+        background-image: none;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+      }
+      #main{
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+      }
+      
+      /* Style the submit button */
+      button[type="submit"] {
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: #513f75;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      
+      /* Style the header */
+      header {
+        background: linear-gradient(to right, #00ff00, #ffff00);
+
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+      
+      /* Style the footer */
+      footer {
+        background-color: #2f302f;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>MULBERRY LEAVES DISEASE DETECTION</h1>
+    </header>
+    <div id="main">
+    <form method="POST" action="/stage">
+      
+       <select id="input" name="input">
+        <option value="" selected disabled hidden>Select an option</option>
+        <option value="week1">Week 1</option>
+        <option value="week2">Week 2</option>
+        <option value="week3">Week 3</option>
+        <option value="week4">Week 4</option>
+        <option value="week5">Week 5</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+    </div>
+    <footer>
+      <p>&copy; 2025 MULBERRY LEAVES DISEASE DETECTION. All rights reserved.</p>
+    </footer>
+    <script>
+      const images = [
+        '{{url_for('static',filename='images/1.jpeg')}}',
+        '{{url_for('static',filename='images/2.jpeg')}}',
+        '{{url_for('static',filename='images/che.jpeg')}}'
+      ];
+      let index = 0;
+      const select = document.querySelector('#main');
+      select.style.backgroundImage =  `url(${images[index]})`;
+      setInterval(() => {
+        select.style.backgroundImage = `url(${images[index]})`;
+        index++;
+        if (index >= images.length) {
+          index = 0;
+        }
+      }, 4000);
+    </script>
+  </body>
+</html
